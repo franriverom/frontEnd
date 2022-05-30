@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7vh;
+    flex-direction: row;
+    gap: 3vw;
+    height: 65vh;
+    border: 2px solid black;
+    
+}
+
+h1{
+    font-size: 30px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.container img{
+    height: 64.4vh;
+    width: 45vw;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}

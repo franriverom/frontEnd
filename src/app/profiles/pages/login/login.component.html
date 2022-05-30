@@ -1,0 +1,72 @@
+<div class="container">
+
+
+    <div class="carousel-container">
+        <h2>LAST EDITION</h2>
+        <carousel>
+            <div class="carousel-cell">
+                <img src="../../assets/couple.jpg" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../../assets/burning-man-map.jpg" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../../assets/faro-burning-man.png" />
+            </div> 
+            <div class="carousel-cell">
+                <img src="../../assets/sculpture.jpg" />
+            </div> 
+            <div class="carousel-cell">
+                <img
+                    src="../../assets/fire.jpeg" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../../assets/rainbowgirls.jpg" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../../assets/ART.jpeg" />
+            </div>
+        </carousel>
+    </div>
+    <form autocomplete="off" [formGroup]="myForm">
+        <div class="div-form">
+
+            <div class="title">
+                <p>Login<span class="admin-text">App</span></p>
+            </div>
+
+            <div class="container-inputs">
+
+                <div class="div-input">
+                    <div>
+                        <span class="material-icons">
+                            mail_outline
+                        </span>
+                        <p class="span">Username</p>
+                    </div>
+
+                    <input matInput type="text" formControlName="userName">
+                </div>
+
+                <div class="div-input">
+                    <div>
+                        <span class="material-icons">
+                            lock_outline
+                        </span>
+                        <p class="span">Contraseña</p>
+                    </div>
+
+                    <input matInput [type]="visiblePassword? 'text': 'password' " formControlName="password">
+                    <mat-icon (click)="watch()" id="passw">visibility</mat-icon>
+                </div>
+
+            </div>
+
+            <div class="container-button">
+                <button mat-raised-button type="button" class="login" (click)="login()">Entrar</button>
+            </div>
+
+        </div>
+    </form>
+
+</div>

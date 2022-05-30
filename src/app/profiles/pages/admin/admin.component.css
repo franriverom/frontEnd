@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7vh;
+    flex-direction: row;
+    gap: 5vw;
+    height: 65vh;
+}
